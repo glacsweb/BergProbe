@@ -2893,8 +2893,8 @@ type RDH, grid 15 mm</description>
 <part name="R2" library="resistor" deviceset="R-EU_" device="R0805" value="100K"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="Q1" library="farnell-parts" deviceset="DMG6602SVT" device=""/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="R0805" value="DNP"/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="R0805" value="DNP"/>
+<part name="R500" library="resistor" deviceset="R-EU_" device="R0805" value="DNP"/>
+<part name="R600" library="resistor" deviceset="R-EU_" device="R0805" value="DNP"/>
 </parts>
 <sheets>
 <sheet>
@@ -2930,27 +2930,12 @@ type RDH, grid 15 mm</description>
 <instance part="GND10" gate="1" x="342.9" y="167.64"/>
 <instance part="Q1" gate="G$1" x="342.9" y="190.5"/>
 <instance part="Q1" gate="G$2" x="347.98" y="198.12"/>
-<instance part="R5" gate="G$1" x="119.38" y="50.8" rot="R180"/>
-<instance part="R6" gate="G$1" x="134.62" y="50.8" rot="R180"/>
+<instance part="R500" gate="G$1" x="119.38" y="50.8" rot="R180"/>
+<instance part="R600" gate="G$1" x="134.62" y="50.8" rot="R180"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="BATTERY" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="BAT"/>
-<wire x1="38.1" y1="218.44" x2="38.1" y2="246.38" width="0.1524" layer="91"/>
-<label x="38.1" y="233.68" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="50.8" x2="127" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="127" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="127" y1="50.8" x2="127" y2="35.56" width="0.1524" layer="91"/>
-<label x="127" y="35.56" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -3240,9 +3225,26 @@ type RDH, grid 15 mm</description>
 <label x="246.38" y="215.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R500" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
 <label x="101.6" y="50.8" size="1.778" layer="95"/>
+<wire x1="111.76" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="50.8" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R600" gate="G$1" pin="2"/>
+<pinref part="R500" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="50.8" x2="127" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="127" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="127" y1="50.8" x2="127" y2="48.26" width="0.1524" layer="91"/>
+<label x="127" y="35.56" size="1.778" layer="95" rot="R90"/>
+<wire x1="127" y1="48.26" x2="127" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
+<junction x="111.76" y="50.8"/>
+<junction x="127" y="48.26"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="BAT"/>
+<wire x1="38.1" y1="218.44" x2="38.1" y2="246.38" width="0.1524" layer="91"/>
+<label x="38.1" y="233.68" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GPS_BAT" class="0">
@@ -3269,7 +3271,7 @@ type RDH, grid 15 mm</description>
 <label x="160.02" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R600" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="50.8" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
 <label x="142.24" y="50.8" size="1.778" layer="95"/>
 </segment>
