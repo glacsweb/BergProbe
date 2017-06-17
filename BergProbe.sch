@@ -553,6 +553,46 @@ DIN A3, landscape with location and doc. field</description>
 <text x="-2.2" y="-4" size="1.27" layer="25">&gt;VALUE</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="51">*</text>
 </package>
+<package name="3-MOLEX">
+<wire x1="-3.81" y1="2.921" x2="3.81" y2="2.921" width="0.127" layer="21"/>
+<wire x1="3.81" y1="2.921" x2="3.81" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.397" x2="3.81" y2="-2.921" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="2.921" x2="-3.81" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-1.397" x2="-3.81" y2="-2.921" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.921" x2="3.81" y2="-2.921" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-1.397" x2="3.81" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="2.921" x2="3.81" y2="2.921" width="0.127" layer="39"/>
+<wire x1="3.81" y1="2.921" x2="3.81" y2="-2.921" width="0.127" layer="39"/>
+<wire x1="3.81" y1="-2.921" x2="-3.81" y2="-2.921" width="0.127" layer="39"/>
+<wire x1="-3.81" y1="-2.921" x2="-3.81" y2="2.921" width="0.127" layer="39"/>
+<pad name="2" x="0" y="0" drill="0.9144" shape="long" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="0.9144" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.9144" shape="long" rot="R90"/>
+<text x="-3.175" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.556" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.8448" y1="-0.3048" x2="-2.2352" y2="0.3048" layer="51" rot="R90"/>
+<rectangle x1="-0.3048" y1="-0.3048" x2="0.3048" y2="0.3048" layer="51" rot="R90"/>
+<rectangle x1="2.2352" y1="-0.3048" x2="2.8448" y2="0.3048" layer="51" rot="R90"/>
+</package>
+<package name="2-MOLEX">
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.778" x2="2.54" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.778" x2="-2.54" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.302" x2="2.54" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.778" x2="2.54" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="39"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-3.302" width="0.127" layer="39"/>
+<wire x1="2.54" y1="-3.302" x2="-2.54" y2="-3.302" width="0.127" layer="39"/>
+<wire x1="-2.54" y1="-3.302" x2="-2.54" y2="2.54" width="0.127" layer="39"/>
+<pad name="2" x="1.27" y="-0.381" drill="0.9144" shape="long" rot="R90"/>
+<pad name="1" x="-1.27" y="-0.381" drill="0.9144" shape="long" rot="R90"/>
+<text x="2.794" y="-3.556" size="1.27" layer="25" ratio="10" rot="R180">&gt;NAME</text>
+<text x="3.048" y="4.191" size="1.27" layer="27" ratio="10" rot="R180">&gt;VALUE</text>
+<rectangle x1="-1.5748" y1="-0.6858" x2="-0.9652" y2="-0.0762" layer="51" rot="R90"/>
+<rectangle x1="0.9652" y1="-0.6858" x2="1.5748" y2="-0.0762" layer="51" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DS3231SN">
@@ -701,6 +741,37 @@ DIN A3, landscape with location and doc. field</description>
 <vertex x="1.524" y="-0.762"/>
 </polygon>
 </symbol>
+<symbol name="J3">
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="-3.175" y1="0" x2="3.175" y2="0" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0.635" x2="-3.175" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="-3.175" y1="0.635" x2="-3.175" y2="0" width="0.4064" layer="94"/>
+<text x="-3.81" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="3" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="J2">
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="3.175" y2="0" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0.635" x2="-0.635" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.4064" layer="94"/>
+<text x="-1.27" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1" x="0" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="2" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DS3231SN" prefix="U">
@@ -791,6 +862,39 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="G$2" pin="D" pad="P$4"/>
 <connect gate="G$2" pin="G" pad="P$3"/>
 <connect gate="G$2" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3-PIN-MOLEX" prefix="J">
+<gates>
+<gate name="G$1" symbol="J3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3-MOLEX">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2-PIN-MOLEX" prefix="J">
+<gates>
+<gate name="G$1" symbol="J2" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="2-MOLEX">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2895,6 +2999,16 @@ type RDH, grid 15 mm</description>
 <part name="Q1" library="farnell-parts" deviceset="DMG6602SVT" device=""/>
 <part name="R500" library="resistor" deviceset="R-EU_" device="R0805" value="DNP"/>
 <part name="R600" library="resistor" deviceset="R-EU_" device="R0805" value="DNP"/>
+<part name="A7" library="farnell-parts" deviceset="3-PIN-MOLEX" device=""/>
+<part name="A6" library="farnell-parts" deviceset="3-PIN-MOLEX" device=""/>
+<part name="A5" library="farnell-parts" deviceset="3-PIN-MOLEX" device=""/>
+<part name="J4" library="farnell-parts" deviceset="2-PIN-MOLEX" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2932,6 +3046,16 @@ type RDH, grid 15 mm</description>
 <instance part="Q1" gate="G$2" x="347.98" y="198.12"/>
 <instance part="R500" gate="G$1" x="119.38" y="50.8" rot="R180"/>
 <instance part="R600" gate="G$1" x="134.62" y="50.8" rot="R180"/>
+<instance part="A7" gate="G$1" x="210.82" y="104.14"/>
+<instance part="A6" gate="G$1" x="231.14" y="104.14"/>
+<instance part="A5" gate="G$1" x="251.46" y="104.14"/>
+<instance part="J4" gate="G$1" x="274.32" y="104.14"/>
+<instance part="GND11" gate="1" x="208.28" y="83.82"/>
+<instance part="GND12" gate="1" x="228.6" y="83.82"/>
+<instance part="GND13" gate="1" x="248.92" y="83.82"/>
+<instance part="+3V3" gate="G$1" x="213.36" y="83.82" rot="R180"/>
+<instance part="+3V4" gate="G$1" x="233.68" y="83.82" rot="R180"/>
+<instance part="+3V5" gate="G$1" x="254" y="83.82" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3036,6 +3160,21 @@ type RDH, grid 15 mm</description>
 <wire x1="335.28" y1="172.72" x2="335.28" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="172.72" x2="335.28" y2="172.72" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="A7" gate="G$1" pin="1"/>
+<wire x1="208.28" y1="101.6" x2="208.28" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="A6" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="101.6" x2="228.6" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="A5" gate="G$1" pin="1"/>
+<wire x1="248.92" y1="101.6" x2="248.92" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -3052,6 +3191,21 @@ type RDH, grid 15 mm</description>
 <wire x1="127" y1="200.66" x2="119.38" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="210.82" x2="119.38" y2="200.66" width="0.1524" layer="91"/>
 <junction x="119.38" y="210.82"/>
+</segment>
+<segment>
+<pinref part="A7" gate="G$1" pin="3"/>
+<wire x1="213.36" y1="101.6" x2="213.36" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="A6" gate="G$1" pin="3"/>
+<wire x1="233.68" y1="101.6" x2="233.68" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="A5" gate="G$1" pin="3"/>
+<wire x1="254" y1="101.6" x2="254" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="USART1_TX" class="0">
@@ -3296,6 +3450,42 @@ type RDH, grid 15 mm</description>
 <pinref part="Q1" gate="G$1" pin="D@1"/>
 <wire x1="342.9" y1="195.58" x2="342.9" y2="200.66" width="0.1524" layer="91"/>
 <junction x="342.9" y="200.66"/>
+</segment>
+</net>
+<net name="ADC_A7" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A7"/>
+<wire x1="53.34" y1="218.44" x2="53.34" y2="238.76" width="0.1524" layer="91"/>
+<label x="53.34" y="223.52" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="A7" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="101.6" x2="210.82" y2="86.36" width="0.1524" layer="91"/>
+<label x="210.82" y="88.9" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="ADC_A6" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A6"/>
+<wire x1="55.88" y1="218.44" x2="55.88" y2="238.76" width="0.1524" layer="91"/>
+<label x="55.88" y="223.52" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="A6" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="101.6" x2="231.14" y2="86.36" width="0.1524" layer="91"/>
+<label x="231.14" y="88.9" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="ADC_A5" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A5"/>
+<wire x1="58.42" y1="218.44" x2="58.42" y2="238.76" width="0.1524" layer="91"/>
+<label x="58.42" y="223.52" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="A5" gate="G$1" pin="2"/>
+<wire x1="251.46" y1="101.6" x2="251.46" y2="86.36" width="0.1524" layer="91"/>
+<label x="251.46" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
