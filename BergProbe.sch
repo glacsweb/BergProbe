@@ -3002,7 +3002,7 @@ type RDH, grid 15 mm</description>
 <part name="A7" library="farnell-parts" deviceset="3-PIN-MOLEX" device=""/>
 <part name="A6" library="farnell-parts" deviceset="3-PIN-MOLEX" device=""/>
 <part name="A5" library="farnell-parts" deviceset="3-PIN-MOLEX" device=""/>
-<part name="J4" library="farnell-parts" deviceset="2-PIN-MOLEX" device=""/>
+<part name="WAKE" library="farnell-parts" deviceset="2-PIN-MOLEX" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
@@ -3049,7 +3049,7 @@ type RDH, grid 15 mm</description>
 <instance part="A7" gate="G$1" x="210.82" y="104.14"/>
 <instance part="A6" gate="G$1" x="231.14" y="104.14"/>
 <instance part="A5" gate="G$1" x="251.46" y="104.14"/>
-<instance part="J4" gate="G$1" x="274.32" y="104.14"/>
+<instance part="WAKE" gate="G$1" x="274.32" y="104.14"/>
 <instance part="GND11" gate="1" x="208.28" y="83.82"/>
 <instance part="GND12" gate="1" x="228.6" y="83.82"/>
 <instance part="GND13" gate="1" x="248.92" y="83.82"/>
@@ -3338,28 +3338,28 @@ type RDH, grid 15 mm</description>
 </net>
 <net name="SAT_PWR" class="0">
 <segment>
-<pinref part="GPS" gate="G$1" pin="4"/>
-<wire x1="50.8" y1="101.6" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
-<label x="50.8" y="81.28" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="Q2" gate="G$2" pin="D"/>
 <wire x1="279.4" y1="190.5" x2="279.4" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="190.5" x2="294.64" y2="190.5" width="0.1524" layer="91"/>
 <label x="281.94" y="190.5" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="GPS_PWR" class="0">
 <segment>
 <pinref part="SAT" gate="G$1" pin="4"/>
 <wire x1="76.2" y1="101.6" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
 <label x="76.2" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
+</net>
+<net name="GPS_PWR" class="0">
 <segment>
 <pinref part="Q1" gate="G$2" pin="D"/>
 <wire x1="350.52" y1="190.5" x2="350.52" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="190.5" x2="365.76" y2="190.5" width="0.1524" layer="91"/>
 <label x="353.06" y="190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GPS" gate="G$1" pin="4"/>
+<wire x1="50.8" y1="101.6" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
+<label x="50.8" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="SAT_BAT" class="0">
@@ -3486,6 +3486,88 @@ type RDH, grid 15 mm</description>
 <pinref part="A5" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="101.6" x2="251.46" y2="86.36" width="0.1524" layer="91"/>
 <label x="251.46" y="88.9" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="WAKE" gate="G$1" pin="1"/>
+<wire x1="274.32" y1="101.6" x2="274.32" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="WAKE" gate="G$1" pin="2"/>
+<wire x1="276.86" y1="101.6" x2="276.86" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="A4" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A4"/>
+<wire x1="71.12" y1="210.82" x2="91.44" y2="210.82" width="0.1524" layer="91"/>
+<label x="73.66" y="210.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A1"/>
+<wire x1="71.12" y1="203.2" x2="91.44" y2="203.2" width="0.1524" layer="91"/>
+<label x="73.66" y="203.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A10" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A10"/>
+<wire x1="71.12" y1="198.12" x2="91.44" y2="198.12" width="0.1524" layer="91"/>
+<label x="73.66" y="198.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B9"/>
+<wire x1="71.12" y1="195.58" x2="91.44" y2="195.58" width="0.1524" layer="91"/>
+<label x="73.66" y="195.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B8" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B8"/>
+<wire x1="71.12" y1="193.04" x2="91.44" y2="193.04" width="0.1524" layer="91"/>
+<label x="73.66" y="193.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A8" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A8"/>
+<wire x1="58.42" y1="185.42" x2="58.42" y2="167.64" width="0.1524" layer="91"/>
+<label x="58.42" y="180.34" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="B5" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B5"/>
+<wire x1="50.8" y1="185.42" x2="50.8" y2="167.64" width="0.1524" layer="91"/>
+<label x="50.8" y="180.34" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="B4" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B4"/>
+<wire x1="48.26" y1="185.42" x2="48.26" y2="167.64" width="0.1524" layer="91"/>
+<label x="48.26" y="180.34" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="B15" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B15"/>
+<wire x1="40.64" y1="218.44" x2="40.64" y2="238.76" width="0.1524" layer="91"/>
+<label x="40.64" y="223.52" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="B1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B1"/>
+<wire x1="50.8" y1="218.44" x2="50.8" y2="238.76" width="0.1524" layer="91"/>
+<label x="50.8" y="223.52" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
