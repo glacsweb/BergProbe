@@ -186,13 +186,12 @@
 <circle x="51.308" y="42.926" radius="2.7" width="0.127" layer="21"/>
 <circle x="20.32" y="8.89" radius="2.7" width="0.127" layer="21"/>
 <circle x="51.308" y="9.398" radius="2.7" width="0.127" layer="21"/>
-<text x="66.548" y="7.366" size="1.6764" layer="21" ratio="10" rot="R90">Graeme Bragg, 
-Kirk Martinez
-</text>
-<text x="58.42" y="7.366" size="1.778" layer="21" ratio="10" rot="R90">Bergprobe V1.0</text>
+<text x="64.008" y="7.366" size="1.4224" layer="21" ratio="10" rot="R90">Graeme Bragg, 
+Kirk Martinez</text>
+<text x="58.42" y="7.366" size="1.6764" layer="21" ratio="10" rot="R90">Bergprobe V1.0</text>
 <text x="69.088" y="7.366" size="1.4224" layer="21" ratio="10" rot="R90">University of
 Southampton</text>
-<text x="69.088" y="23.876" size="1.778" layer="21" ratio="10" rot="R90">http://glacsweb.org</text>
+<text x="69.088" y="23.876" size="1.4224" layer="21" ratio="10" rot="R90">http://glacsweb.org</text>
 <rectangle x1="59.436" y1="23.876" x2="66.548" y2="29.718" layer="21"/>
 <text x="17.272" y="19.05" size="1.778" layer="25" ratio="10">Espruino
 Pico</text>
