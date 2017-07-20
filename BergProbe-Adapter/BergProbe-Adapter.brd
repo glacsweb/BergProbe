@@ -190,8 +190,8 @@
 <text x="36" y="3.5" size="0.3048" layer="25">8mm</text>
 <hole x="54.9" y="3.8" drill="2.5"/>
 <hole x="85.4" y="3.7" drill="2.5"/>
-<wire x1="85.5" y1="3.7" x2="54.9" y2="3.7" width="0.4" layer="25"/>
-<wire x1="7.1" y1="3.9" x2="41.1" y2="3.9" width="0.4" layer="25"/>
+<text x="79.5" y="3.4" size="0.3048" layer="1">10.5mm</text>
+<text x="58.3" y="3.7" size="0.3048" layer="1">8mm</text>
 </plain>
 <libraries>
 <library name="headers(2mm)(samtec)">
@@ -744,10 +744,9 @@ design rules under a new name.</description>
 <wire x1="22.826" y1="2.826" x2="22.908" y2="2.826" width="0.4064" layer="16"/>
 <wire x1="28.908" y1="2.826" x2="30.908" y2="2.826" width="0.4064" layer="16"/>
 <wire x1="28.908" y1="2.826" x2="26.908" y2="4.826" width="0.4064" layer="16"/>
-<wire x1="62.88" y1="4.826" x2="59" y2="4.826" width="0.4064" layer="1"/>
-<wire x1="59" y1="4.826" x2="59" y2="5" width="0.4064" layer="1"/>
-<wire x1="59" y1="4.826" x2="52" y2="4.826" width="0.4064" layer="1"/>
-<wire x1="52" y1="4.826" x2="52" y2="22" width="0.4064" layer="1"/>
+<wire x1="62.88" y1="4.826" x2="62.9" y2="7.326" width="0.4064" layer="1"/>
+<wire x1="62.9" y1="7.326" x2="52" y2="7.326" width="0.4064" layer="1"/>
+<wire x1="52" y1="7.326" x2="52" y2="22" width="0.4064" layer="1"/>
 <wire x1="52" y1="22" x2="47.75" y2="22" width="0.4064" layer="1"/>
 <wire x1="47.75" y1="20.51" x2="47.75" y2="22" width="0.4064" layer="1"/>
 <wire x1="13.54" y1="20.508" x2="13.716" y2="20" width="0.4064" layer="16"/>
@@ -764,9 +763,9 @@ design rules under a new name.</description>
 <wire x1="22.908" y1="2.826" x2="23" y2="2.826" width="0.4" layer="16"/>
 <wire x1="23" y1="2.826" x2="23" y2="1" width="0.4" layer="16"/>
 <wire x1="23" y1="1" x2="13" y2="1" width="0.4" layer="16"/>
-<wire x1="13" y1="1" x2="13" y2="8" width="0.4" layer="16"/>
-<wire x1="13" y1="8" x2="24" y2="8" width="0.4" layer="16"/>
-<wire x1="24" y1="8" x2="24" y2="10" width="0.4" layer="16"/>
+<wire x1="13" y1="1" x2="13" y2="9.9" width="0.4" layer="16"/>
+<wire x1="13" y1="9.9" x2="24" y2="9.9" width="0.4" layer="16"/>
+<wire x1="24" y1="9.9" x2="24" y2="10" width="0.4" layer="16"/>
 <via x="24" y="10" extent="1-16" drill="0.35"/>
 <wire x1="24" y1="10" x2="32.10076875" y2="10" width="0.4" layer="1"/>
 <wire x1="32.10076875" y1="10" x2="32.10076875" y2="10.01876875" width="0.4" layer="1"/>
@@ -815,9 +814,9 @@ design rules under a new name.</description>
 <signal name="GPS_USB0+">
 <contactref element="GPS" pad="4"/>
 <contactref element="USB" pad="3"/>
-<wire x1="16.908" y1="2.826" x2="16.908" y2="1.2192" width="0.4064" layer="1"/>
-<wire x1="16.908" y1="1.2192" x2="2" y2="1.2192" width="0.4064" layer="1"/>
-<wire x1="2" y1="1.2192" x2="2" y2="23" width="0.4064" layer="1"/>
+<wire x1="16.908" y1="2.826" x2="16.908" y2="0.4192" width="0.4064" layer="1"/>
+<wire x1="16.908" y1="0.4192" x2="2" y2="0.4192" width="0.4064" layer="1"/>
+<wire x1="2" y1="0.4192" x2="2" y2="23" width="0.4064" layer="1"/>
 <wire x1="2" y1="23" x2="11" y2="23" width="0.4064" layer="1"/>
 <wire x1="11" y1="23" x2="11" y2="20.508" width="0.4064" layer="1"/>
 </signal>
@@ -826,40 +825,38 @@ design rules under a new name.</description>
 <contactref element="TXSEL" pad="3"/>
 <wire x1="89.916" y1="22.606" x2="89.408" y2="22.606" width="0.4064" layer="16"/>
 <wire x1="89.408" y1="9.652" x2="89.408" y2="22.606" width="0.4064" layer="16"/>
-<wire x1="89.408" y1="9.961075" x2="89.408" y2="8.128" width="0" layer="19" extent="1-16"/>
 <wire x1="24.908" y1="4.826" x2="25.146" y2="4.826" width="0.4064" layer="16"/>
-<wire x1="25.146" y1="4.826" x2="25.146" y2="7.62" width="0.4064" layer="16"/>
-<wire x1="25.146" y1="7.62" x2="56.642" y2="7.62" width="0.4064" layer="16"/>
-<wire x1="56.642" y1="7.874" x2="56.642" y2="7.62" width="0.4064" layer="16"/>
-<via x="56.642" y="7.62" extent="1-16" drill="0.35"/>
-<wire x1="56.642" y1="7.62" x2="56.642" y2="9.652" width="0.4064" layer="1"/>
+<wire x1="25.146" y1="4.826" x2="25.146" y2="8.82" width="0.4064" layer="16"/>
+<wire x1="25.146" y1="8.82" x2="56.642" y2="8.82" width="0.4064" layer="16"/>
+<wire x1="56.642" y1="7.874" x2="56.642" y2="8.82" width="0.4064" layer="16"/>
+<via x="56.642" y="8.82" extent="1-16" drill="0.35"/>
+<wire x1="56.642" y1="8.82" x2="56.642" y2="9.652" width="0.4064" layer="1"/>
 <wire x1="56.642" y1="9.652" x2="85.09" y2="9.652" width="0.4064" layer="1"/>
 <wire x1="85.09" y1="9.398" x2="85.09" y2="9.652" width="0.4064" layer="1"/>
 <via x="85.09" y="9.652" extent="1-16" drill="0.35"/>
 <wire x1="85.09" y1="9.652" x2="89.408" y2="9.652" width="0.4064" layer="16"/>
-<wire x1="89.408" y1="9.652" x2="89.408" y2="9.961075" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="GPS_UART0_RX">
 <contactref element="GPS" pad="12"/>
 <contactref element="GPSRXSEL" pad="1"/>
 <wire x1="24.908" y1="2.826" x2="25" y2="2.734" width="0.4064" layer="1"/>
-<wire x1="25" y1="2.734" x2="25" y2="1.2192" width="0.4064" layer="1"/>
-<wire x1="25" y1="1.2192" x2="44.778" y2="1.2192" width="0.4064" layer="1"/>
+<wire x1="25" y1="2.734" x2="25" y2="0.6192" width="0.4064" layer="1"/>
+<wire x1="25" y1="0.6192" x2="44.778" y2="0.6192" width="0.4064" layer="1"/>
 <wire x1="64.516" y1="22.606" x2="64.262" y2="22.606" width="0.4064" layer="16"/>
 <wire x1="64.262" y1="22.606" x2="64.262" y2="15.24" width="0.4064" layer="16"/>
 <wire x1="64.262" y1="15.24" x2="44.704" y2="15.24" width="0.4064" layer="16"/>
 <wire x1="44.704" y1="15.24" x2="44.704" y2="11.938" width="0.4064" layer="16"/>
 <via x="44.704" y="11.938" extent="1-16" drill="0.35"/>
-<wire x1="44.778" y1="1.2192" x2="44.704" y2="1.2192" width="0.4064" layer="1"/>
+<wire x1="44.778" y1="0.6192" x2="44.704" y2="1.2192" width="0.4064" layer="1"/>
 <wire x1="44.704" y1="1.2192" x2="44.704" y2="11.938" width="0.4064" layer="1"/>
 </signal>
 <signal name="GPS_UART1_TX">
 <contactref element="GPS" pad="14"/>
 <contactref element="RXSEL" pad="1"/>
 <wire x1="26.908" y1="2.826" x2="28.448" y2="1.286" width="0.4064" layer="16"/>
-<wire x1="28.448" y1="1.286" x2="28.448" y2="1.2192" width="0.4064" layer="16"/>
-<wire x1="28.448" y1="1.2192" x2="60.96" y2="1.2192" width="0.4064" layer="16"/>
-<wire x1="60.96" y1="1.2192" x2="60.96" y2="7.874" width="0.4064" layer="16"/>
+<wire x1="28.448" y1="1.286" x2="28.448" y2="0.6192" width="0.4064" layer="16"/>
+<wire x1="28.448" y1="0.6192" x2="60.96" y2="0.6192" width="0.4064" layer="16"/>
+<wire x1="60.96" y1="0.6192" x2="60.96" y2="7.874" width="0.4064" layer="16"/>
 <wire x1="60.96" y1="7.874" x2="74.676" y2="7.874" width="0.4064" layer="16"/>
 <wire x1="74.676" y1="7.874" x2="74.676" y2="22.606" width="0.4064" layer="16"/>
 </signal>
@@ -870,21 +867,21 @@ design rules under a new name.</description>
 <contactref element="RADIO" pad="1"/>
 <contactref element="U1" pad="3"/>
 <wire x1="74.88" y1="4.826" x2="77" y2="2.706" width="0.4064" layer="1"/>
-<wire x1="77" y1="2.706" x2="77" y2="1.2192" width="0.4064" layer="1"/>
-<wire x1="77" y1="1.2192" x2="50.29" y2="1.2192" width="0.4064" layer="1"/>
-<wire x1="50.29" y1="1.2192" x2="50.29" y2="20.51" width="0.4064" layer="1"/>
+<wire x1="77" y1="2.706" x2="77" y2="0.6192" width="0.4064" layer="1"/>
+<wire x1="77" y1="0.6192" x2="50.29" y2="0.6192" width="0.4064" layer="1"/>
+<wire x1="50.29" y1="0.6192" x2="50.29" y2="20.51" width="0.4064" layer="1"/>
 </signal>
 <signal name="RADIO_TXD">
 <contactref element="RADIO" pad="5"/>
 <contactref element="RXSEL" pad="3"/>
 <contactref element="GPSRXSEL" pad="2"/>
 <wire x1="70.88" y1="4.826" x2="71.11986875" y2="4.826" width="0.4064" layer="16"/>
-<wire x1="71.11986875" y1="4.826" x2="72.36446875" y2="6.0706" width="0.4064" layer="16"/>
-<wire x1="72.36446875" y1="6.0706" x2="90.9066" y2="6.0706" width="0.4064" layer="16"/>
+<wire x1="71.11986875" y1="4.826" x2="72.36446875" y2="6.3706" width="0.4064" layer="16"/>
+<wire x1="72.36446875" y1="6.3706" x2="90.9066" y2="6.3706" width="0.4064" layer="16"/>
 <wire x1="91.5008" y1="6.6648" x2="91.5008" y2="25.4" width="0.4064" layer="16"/>
 <wire x1="91.5008" y1="25.4" x2="79.756" y2="25.4" width="0.4064" layer="16"/>
 <wire x1="79.756" y1="25.4" x2="79.756" y2="22.606" width="0.4064" layer="16"/>
-<wire x1="90.9066" y1="6.0706" x2="91.5008" y2="6.6648" width="0.4064" layer="16"/>
+<wire x1="90.9066" y1="6.3706" x2="91.5008" y2="6.6648" width="0.4064" layer="16"/>
 <wire x1="79.756" y1="22.606" x2="79.756" y2="18.034" width="0.4064" layer="1"/>
 <wire x1="79.756" y1="18.034" x2="67.056" y2="18.034" width="0.4064" layer="1"/>
 <wire x1="67.056" y1="18.034" x2="67.056" y2="22.606" width="0.4064" layer="1"/>
@@ -893,11 +890,11 @@ design rules under a new name.</description>
 <contactref element="RADIO" pad="7"/>
 <contactref element="TXSEL" pad="2"/>
 <wire x1="68.88" y1="4.826" x2="69" y2="4.826" width="0.4064" layer="1"/>
-<wire x1="69" y1="4.826" x2="69" y2="7" width="0.4064" layer="1"/>
-<wire x1="84.342" y1="7" x2="69" y2="7" width="0.4064" layer="1"/>
+<wire x1="69" y1="4.826" x2="69" y2="7.2" width="0.4064" layer="1"/>
+<wire x1="87.342" y1="7.2" x2="69" y2="7.2" width="0.4064" layer="1"/>
 <wire x1="87.376" y1="22.606" x2="87.376" y2="7.112" width="0.4064" layer="1"/>
-<wire x1="87.376" y1="7.112" x2="84.342" y2="7.112" width="0.4064" layer="1"/>
-<wire x1="84.342" y1="7.112" x2="84.342" y2="7" width="0.4064" layer="1"/>
+<wire x1="87.376" y1="7.112" x2="87.342" y2="7.112" width="0.4064" layer="1"/>
+<wire x1="87.342" y1="7.112" x2="87.342" y2="7.2" width="0.4064" layer="1"/>
 </signal>
 <signal name="PICO_RX">
 <contactref element="GPS1" pad="2"/>
