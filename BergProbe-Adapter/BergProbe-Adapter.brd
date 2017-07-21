@@ -190,8 +190,8 @@
 <text x="36" y="3.5" size="0.3048" layer="25">8mm</text>
 <hole x="54.9" y="3.8" drill="2.5"/>
 <hole x="85.4" y="3.7" drill="2.5"/>
-<text x="79.5" y="3.4" size="0.3048" layer="25">10.5mm</text>
-<text x="58.3" y="3.7" size="0.3048" layer="25">8mm</text>
+<text x="79.5" y="3.4" size="0.3048" layer="1">10.5mm</text>
+<text x="58.3" y="3.7" size="0.3048" layer="1">8mm</text>
 </plain>
 <libraries>
 <library name="headers(2mm)(samtec)">
