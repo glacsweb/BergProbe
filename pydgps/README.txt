@@ -3,6 +3,9 @@ Authors: Emily James, University of Southampton 2020
 for the glacsweb.org project
 April 2021
 
+Base station wakes up periodically and starts sending dGPS corrections
+Rovers wake up at the same time and store fixes
+
 pyb - files that should be flashed or copied onto the microcontrollers
 client - code run separately on a PC
 
